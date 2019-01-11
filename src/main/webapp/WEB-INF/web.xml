@@ -1,0 +1,24 @@
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+   <welcome-flie-list>
+   <welcome-file>index.jsp</welcome-file>
+   <welcome-file>index.html</welcome-file>
+   </welcome-flie-list>
+	
+	<servlet>
+	<servlet-name>spring-mvc</servlet-name>
+	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+	<load-on-stertup>1</load-on-stertup>
+	<init-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/application-context.xml</param-value>
+    </init-param>
+	</servlet>	
+	
+	<servlet-mapping>
+	<servlet-name>spring-mvc</servlet-name>
+	<url-pattern>/</url-pattern>
+	</servlet-mapping>
+   
+</web-app>
